@@ -1,9 +1,0 @@
-{
-    "version":  "Release",
-    "description": "End-to-end encryption for things that matter. Keybase is secure messaging and file-sharing.",
-    "license":  "BSD-3-Clause",
-    "url":  "https://prerelease.keybase.io/keybase_setup_amd64.msi",
-    "depends":  "",
-    "homepage":  "https://keybase.io",
-    "hash":  "dacb6f8e0d6a3d6dc8aa680b1d5519d4c1a47a2bf28d37cf119c9b65eb75fc5e",
-}
