@@ -1,22 +1,36 @@
 {
-    "version": "2.0.23",
+    "version": "3.0.0",
     "description": "ClickUp. Tasks, docs, conversations, timelines, spreadsheets, and mind maps in one place, based on Ash258 repository version",
     "homepage": "https://clickup.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://clickup.com/terms"
     },
-    "url": "https://desktop.clickup.com/windows/Clickup Setup 2.0.23-x64.exe",
-    "hash": "9bd2fc1fb2bfa4f1b09ad91cceb0c06293f52042887cbc7757278be9db519311",
+    "url": "https://desktop.clickup.com/windows/Clickup Setup 3.0.0-x64.exe",
+    "hash": "sha512:30a1aadef527fe39ce906f2936dc7b4e5ea2929e5b0103b9f75443b85024b0351438bb2fa62c5ce04141cc02a35f15137319955c0cf6bc2d8f7f54a2fae16424",
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "file": "Clickup Setup 3.0.0-x64.exe"
+                "args": [
+                    "/S",
+                    "/currentuser",
+                    "/disableAutoUpdates",
+                    "/D=$dir",
+                ],
+            },
+            "uninstaller": {
+                "file": "Uninstall ClickUp.exe",
+                "args": "/S"
+            }
+        }
+    },
     "shortcuts": [
         [
             "ClickUp.exe",
             "ClickUp"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/clickup/clickup-release"
-    },
     "autoupdate": {
         "url": "https://desktop.clickup.com/windows/Clickup Setup $version-x64.exe",
         "hash": {
