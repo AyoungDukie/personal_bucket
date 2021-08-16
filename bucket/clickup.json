@@ -1,26 +1,13 @@
 {
-    "version": "2.0.23",
+    "version": "3.0.0",
     "description": "ClickUp. Tasks, docs, conversations, timelines, spreadsheets, and mind maps in one place, based on Ash258 repository version",
     "homepage": "https://clickup.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://clickup.com/terms"
     },
-    "url": "https://github.com/clickup/clickup-release/releases/download/v2.0.23/clickup-desktop-2.0.23-windows.exe#/cosi.7z",
-    "hash": "sha512:140eefb905f9d6760a3a1af298f389774b9110660f0d003ca8a00a0d8a440c17b1c8769fdad817d557531743bacdd7d8cd45778e809fdafef0118074c5504fd0",
-    "architecture": {
-        "64bit": {
-            "installer": {
-                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
-            }
-        },
-        "32bit": {
-            "installer": {
-                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
-            }
-        }
-    },
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+    "url": "https://desktop.clickup.com/windows/Clickup Setup 3.0.0-x64.exe",
+    "hash": "sha512:30a1aadef527fe39ce906f2936dc7b4e5ea2929e5b0103b9f75443b85024b0351438bb2fa62c5ce04141cc02a35f15137319955c0cf6bc2d8f7f54a2fae16424",
     "shortcuts": [
         [
             "ClickUp.exe",
@@ -31,7 +18,7 @@
         "github": "https://github.com/clickup/clickup-release"
     },
     "autoupdate": {
-        "url": "https://github.com/clickup/clickup-release/releases/download/v$version/clickup-desktop-$version-windows.exe#/cosi.7z",
+        "url": "https://desktop.clickup.com/windows/Clickup Setup $version-x64.exe",
         "hash": {
             "url": "$baseurl/latest.yml",
             "regex": "sha512:\\s+$base64"
