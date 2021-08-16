@@ -16,7 +16,7 @@
                     "/S",
                     "/currentuser",
                     "/disableAutoUpdates",
-                    "/D=$dir",
+                    "/D=$dir"
                 ],
             },
             "uninstaller": {
