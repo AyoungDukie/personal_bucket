@@ -8,7 +8,7 @@
     },
     "url": "https://github.com/linagora/Twake-Desktop/raw/master/download/twake-win-msi-latest.zip",
     "hash": "40b3113bda3ff17bc8eee61a316f66f36a89e6986aa5734437ba0af97b41cc4e",
-    "extract_dir": "twake"
+    "extract_dir": "twake",
     "architecture": {
         "64bit": {
             "installer": {
