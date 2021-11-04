@@ -11,7 +11,7 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\" $false; mv \"$dir\\twake\" \"$dir\" ",
+                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; mv \"$dir\\twake\" \"$dir\" ",
             }
         }
     },
