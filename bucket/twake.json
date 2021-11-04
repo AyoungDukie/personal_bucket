@@ -12,13 +12,14 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -Target \"$persist_dir\\data\" ",
+                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\" ",
             },
             "uninstaller": {
                 "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Twake\" ",
             }
         }
     },
+    "post-install": "$null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -Target \"$persist_dir\\data\" ",
     "bin": "twake.exe",
     "shortcuts": [
         [
