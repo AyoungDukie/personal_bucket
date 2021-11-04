@@ -11,7 +11,7 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NP /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; ",
+                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NS /NP /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; ",
             },
             "uninstaller": {
                 "script": "rm -r \"$scoopdir\\..\\AppData\\Roaming\\Twake\" ",
