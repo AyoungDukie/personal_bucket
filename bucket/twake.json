@@ -8,13 +8,14 @@
     },
     "url": "https://github.com/linagora/Twake-Desktop/raw/master/download/twake-win-msi-latest.zip",
     "hash": "40b3113bda3ff17bc8eee61a316f66f36a89e6986aa5734437ba0af97b41cc4e",
+    "persist": "data",
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; ",
+                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; \"$env:COMSPEC\" /c mklink /j \"$scoopdir\\..\\AppData\\Roaming\\Twake\" \"$persist_dir\\data\" \| out-null ",
             },
             "uninstaller": {
-                "script": "rm -r \"$scoopdir\\..\\AppData\\Roaming\\Twake\" ",
+                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; \"$env:COMSPEC\" /c \"rmdir \`\"$currentdir\`\" ",
             }
         }
     },
