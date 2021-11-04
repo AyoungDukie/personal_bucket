@@ -10,19 +10,19 @@
     "hash": "40b3113bda3ff17bc8eee61a316f66f36a89e6986aa5734437ba0af97b41cc4e",
     "pre_install": [
         [
-            "Expand-ZipArchive \"$dir\\twake-win-msi-latest.zip\" \"$dir\\tmp\" $true",
+            "Expand-ZipArchive \"$dir\\twake-win-msi-latest.zip\" \"$dir\\tmp\" ",
         ]
     ],
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\tmp\\Setup_Twake_lastest.msi\" \"$dir\" $false",
+                "script": "Expand-MSIArchive \"$dir\\tmp\\Setup_Twake_lastest.msi\" \"$dir\" ",
             }
         }
     },
     "post_install": [
         [
-            "Remove-Item \"$dir\\tmp\" -Recurse -Force"
+            "Remove-Item \"$dir\\twake-win-msi-latest.zip\", \"$dir\\tmp\" -Recurse -Force"
         ]
     ],
     "bin": "twake.exe",
