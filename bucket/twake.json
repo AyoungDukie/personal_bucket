@@ -14,7 +14,7 @@
                 "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; ",
             },
             "uninstaller": {
-                "script": "start \"$dir\\Setup_Twake_lastest.msi\" /uninstall",
+                "script": "rm -r \"$scoopdir\\..\\AppData\\Roaming\\Twake\" ",
             }
         }
     },
