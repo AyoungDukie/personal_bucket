@@ -12,10 +12,10 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; \"$env:COMSPEC\" /c mklink /j \"$scoopdir\\..\\AppData\\Roaming\\Twake\" \"$persist_dir\\data\" ",
+                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; mklink /j \"$scoopdir\\..\\AppData\\Roaming\\Twake\" \"$persist_dir\\data\" ",
             },
             "uninstaller": {
-                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; \"$env:COMSPEC\" /c \"rmdir \"$scoopdir\\..\\AppData\\Roaming\\Twake\"\" ",
+                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Twake\" ",
             }
         }
     },
