@@ -13,8 +13,6 @@
             "installer": {
                 "script": [
                     [
-                        ##"Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\" ",
-                        ##"mv \"$dir\\twake\" \"$dir\" "
                         "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\" "
                     ]
                  ]
