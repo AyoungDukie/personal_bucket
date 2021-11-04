@@ -15,7 +15,7 @@
                 "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; \"$env:COMSPEC\" /c mklink /j \"$scoopdir\\..\\AppData\\Roaming\\Twake\" \"$persist_dir\\data\" \| out-null ",
             },
             "uninstaller": {
-                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; \"$env:COMSPEC\" /c \"rmdir \`\"$currentdir\`\" ",
+                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; \"$env:COMSPEC\" /c \"rmdir ""`""\"$currentdir""`""\" ",
             }
         }
     },
