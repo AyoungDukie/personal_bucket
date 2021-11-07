@@ -14,6 +14,7 @@
             "Updater"
         ]
     ],
+    "pre-install": "$null = mkdir -Force \"$persist_dir\\Updater\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -Target \"$persist_dir\\Roaming\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -Target \"$persist_dir\\Roaming\" ",
     "architecture": {
         "64bit": {
             "installer": {
@@ -24,12 +25,9 @@
                     "/disableAutoUpdates",
                     "/D=$dir"
                 ],
-                "script": "$null = mkdir -Force \"$persist_dir\\Updater\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -Target \"$persist_dir\\Roaming\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -Target \"$persist_dir\\Roaming\" ",
             },
             "uninstaller": {
-                "file": "Uninstall ClickUp.exe",
-                "args": "/S",
-                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Clickup\";attrib \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\clickup-updater\"; ",
+                "script": "Start-Process \"$dir\\Clickup Setup 3.0.3-x64.exe\" -ArgumentList \"/S\"; attrib \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Clickup\";attrib \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\clickup-updater\"; ",
             }
         }
     },
@@ -38,12 +36,6 @@
             "ClickUp.exe",
             "ClickUp"
         ]
-    ],
-    "autoupdate": {
-        "url": "https://desktop.clickup.com/windows/Clickup Setup $version-x64.exe",
-        "hash": {
-            "url": "$baseurl/latest.yml",
-            "regex": "sha512:\\s+$base64"
-        }
+    ]
     }
 }
