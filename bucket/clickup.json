@@ -10,7 +10,9 @@
     "hash": "sha512:023d986ac91a99250653c9a902a0032e8dfc9c06765b1bde2e1c6006b054c0ef20a29d3e6b0d801a0fac476df44ba2a850c073cfa2f4b13707d1abc984b8c28e",
     "persist": [
         [
-            "Roaming",
+            "Roaming"            
+        ],
+        [
             "Updater"
         ]
     ],
