@@ -8,6 +8,12 @@
     },
     "url": "https://desktop.clickup.com/windows/Clickup Setup 3.0.2-x64.exe",
     "hash": "sha512:8648c6286e361a96e28e70b4f9dc0732c3586d3a04b9ac2098f0b8add4221cc74e7e25ac56eea480d21e4f80f5a3cdebc0f9c7536db00decd166c4f93bfd2b2d",
+    "persist": [
+        [
+            "Roaming",
+            "Updater"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "installer": {
@@ -18,10 +24,12 @@
                     "/disableAutoUpdates",
                     "/D=$dir"
                 ],
+                "script": "$null = mkdir -Force \"$persist_dir\\Updater\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -Target \"$persist_dir\\Roaming\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -Target \"$persist_dir\\Roaming\" ",
             },
             "uninstaller": {
                 "file": "Uninstall ClickUp.exe",
-                "args": "/S"
+                "args": "/S",
+                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Clickup\";attrib \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\clickup-updater\"; ",
             }
         }
     },
