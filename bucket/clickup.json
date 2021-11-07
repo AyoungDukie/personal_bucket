@@ -1,13 +1,13 @@
 {
-    "version": "3.0.2",
+    "version": "3.0.3",
     "description": "ClickUp. Tasks, docs, conversations, timelines, spreadsheets, and mind maps in one place, based on Ash258 repository version",
     "homepage": "https://clickup.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://clickup.com/terms"
     },
-    "url": "https://desktop.clickup.com/windows/Clickup Setup 3.0.2-x64.exe",
-    "hash": "sha512:8648c6286e361a96e28e70b4f9dc0732c3586d3a04b9ac2098f0b8add4221cc74e7e25ac56eea480d21e4f80f5a3cdebc0f9c7536db00decd166c4f93bfd2b2d",
+    "url": "https://desktop.clickup.com/windows/Clickup Setup 3.0.3-x64.exe",
+    "hash": "sha512:023d986ac91a99250653c9a902a0032e8dfc9c06765b1bde2e1c6006b054c0ef20a29d3e6b0d801a0fac476df44ba2a850c073cfa2f4b13707d1abc984b8c28e",
     "persist": [
         [
             "Roaming",
@@ -17,7 +17,7 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "file": "Clickup Setup 3.0.2-x64.exe",
+                "file": "Clickup Setup 3.0.3-x64.exe",
                 "args": [
                     "/S",
                     "/currentuser",
