@@ -16,10 +16,10 @@
             "Updater"
         ]
     ],
-    "pre-install": "$null = mkdir -Force \"$persist_dir\\Updater\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -Target \"$persist_dir\\Roaming\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -Target \"$persist_dir\\Roaming\" ",
     "architecture": {
         "64bit": {
             "installer": {
+                "script": "$null = mkdir -Force \"$persist_dir\\Updater\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -Target \"$persist_dir\\Roaming\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -Target \"$persist_dir\\Roaming\"; Start-Process \"$dir\\Clickup Setup 3.0.3-x64.exe\" -ArgumentList \"/S /currentuser /disableAutoUpdates /D=$dir\"; ",
                 "args": [
                     "/S",
                     "/currentuser",
