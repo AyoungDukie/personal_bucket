@@ -26,10 +26,8 @@
                 ],
             },
             "uninstaller": {
-                "file": "Uninstall Clickup.exe",
-                "args": [
-                    "/S",
-                ],
+                "file": "Uninstall ClickUp.exe",
+                "args": "/S"
             }
         }
     },
