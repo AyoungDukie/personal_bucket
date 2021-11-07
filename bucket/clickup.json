@@ -28,7 +28,7 @@
                 ],
             },
             "uninstaller": {
-                "script": "Start-Process \"$dir\\Clickup Setup 3.0.3-x64.exe\" -ArgumentList \"/S\"; attrib \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Clickup\";attrib \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\clickup-updater\"; ",
+                "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Clickup\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Clickup\";attrib \"$scoopdir\\..\\AppData\\Local\\clickup-updater\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Local\\clickup-updater\"; Start-Process \"$dir\\Clickup Setup 3.0.3-x64.exe\" -ArgumentList \"/S\"; ",
             }
         }
     },
