@@ -1,5 +1,5 @@
 {
-    "version": "2021.Q3.735",
+    "version": "2021.Q4.860",
     "description": "Twake - The Open Digital Workplace; Twake is a secure open source collaboration platform to improve organizational productivity.",
     "homepage": "https://twake.app",
     "license": {
@@ -12,7 +12,7 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; $null = mkdir -Force \"$persist_dir\\data\"; $null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -Target \"$persist_dir\\data\" ",
+                "script": "Expand-MSIArchive \"$dir\\Setup_Twake_lastest.msi\" \"$dir\"; robocopy /MOVE /NJH /NJS /NFL /NDL /S /E \"$dir\\twake\" \"$dir\\..\\$version\"; $null = mkdir -Force \"$persist_dir\\data\"; if (Test-Path -Path \"$scoopdir\\..\\AppData\\Roaming\\Twake\") {$null = New-Item -ItemType Junction -Path \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -Target \"$persist_dir\\data\"} ",
             },
             "uninstaller": {
                 "script": "attrib \"$scoopdir\\..\\AppData\\Roaming\\Twake\" -R /L; rmdir \"$scoopdir\\..\\AppData\\Roaming\\Twake\" ",
