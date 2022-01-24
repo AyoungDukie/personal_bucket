@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
     "license": "GPLv3",
     "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.0.2/Heroic-Setup-2.0.2.exe#/dl.7z",
-    "extract_dir": "Heroi Games Launcher",
+    "extract_dir": "Heroic Games Launcher",
     "bin": "Heroic.exe",
     "shortcuts": [
 	    [
