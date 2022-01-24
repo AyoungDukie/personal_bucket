@@ -5,7 +5,6 @@
     "license": "GPLv3",
     "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.0.2/Heroic-Setup-2.0.2.exe#/dl.7z",
     "hash": "e066f4aaf94d4761036bd9adb270174f8a897540a7db143c9946bd987d5fae82",
-    "bin": "Heroic.exe",
     "checkver": {
 	    "github": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
 	    "regex": "Heroic-Setup-v([\\d.]+)\\.zip"
