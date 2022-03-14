@@ -1,5 +1,5 @@
 {
-    "version": "2021.Q4.860",
+    "version": "2022.Q1.874",
     "description": "Twake - The Open Digital Workplace; Twake is a secure open source collaboration platform to improve organizational productivity.",
     "homepage": "https://twake.app",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://github.com/linagora/Twake/blob/main/LICENSE.md"
     },
     "url": "https://github.com/linagora/Twake-Desktop/raw/master/download/twake-win-msi-latest.zip",
-    "hash": "40b3113bda3ff17bc8eee61a316f66f36a89e6986aa5734437ba0af97b41cc4e",
+    "hash": "2dce52d77934cad8d0701fb99bf0c0f8c703e2e4a154a8f01e99eed1eff19f39",
     "persist": "data",
     "architecture": {
         "64bit": {
