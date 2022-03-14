@@ -7,7 +7,6 @@
         "url": "https://github.com/linagora/Twake/blob/main/LICENSE.md"
     },
     "url": "https://github.com/linagora/Twake-Desktop/raw/master/download/twake-win-msi-latest.zip",
-    "hash": "2dce52d77934cad8d0701fb99bf0c0f8c703e2e4a154a8f01e99eed1eff19f39",
     "persist": "data",
     "architecture": {
         "64bit": {
