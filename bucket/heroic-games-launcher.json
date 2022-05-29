@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
     "license": "GPLv3",
     "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.3.3/Heroic-2.3.3.exe",
-    "hash": "1a48e435ec5a1d173991de87f345dd6eeefcf6709d6285d9cedaf62469922801",
+    "hash": "89d7d9845b06b5e784d96a911edca442c99b869baf7e2809de41e71d49b62e2c",
     "checkver": {
 	    "github": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
 	    "regex": "Heroic-Setup-v([\\d.]+)\\.zip"
