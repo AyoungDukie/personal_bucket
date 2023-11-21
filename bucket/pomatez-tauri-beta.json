@@ -10,8 +10,14 @@
         "Pomatez.exe",
         [
             "Pomatez.exe",
-            "pomatez-tauri-beta"
+            "Pomatez"
         ]        
+    ],
+    "shortcuts": [
+        [
+            "Pomatez.exe",
+            "Pomatez"
+        ]
     ],
     "checkver": {
 	    "github": "https://github.com/zidoro/pomatez",
