@@ -10,7 +10,7 @@
         "Pomatez.exe",
         [
             "Pomatez.exe",
-            "Pomatez"
+            "pomatez-tauri-beta"
         ],
     "checkver": {
 	    "github": "https://github.com/zidoro/pomatez",
