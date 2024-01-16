@@ -5,12 +5,11 @@
   "license": "GPL-3.0-or-later",
   "architecture": {
     "64bit": {
-      "url": "https://ghproxy.net/https://github.com/Nexus-Mods/Vortex/releases/download/v1.9.12/vortex-setup-1.9.12.exe#/dl.7z",
-      "hash": "bf76d696ab7c05a6eebdac0318168fa572bcf305e37c2f2f9dd4192db2d528a1",
+      "url": "https://ghproxy.net/https://github.com/Nexus-Mods/Vortex/releases/download/v1.9.12/vortex-setup-1.9.12.exe#/setup.exe",
       "installer": {
         "script": [
-          "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-          "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+          "Start-Process \"$dir\\setup.exe\" -ArgumentList '/S' -Wait -Verb RunAs | Out-Null",
+          "Remove-Item \"$dir\\setup.exe\""
         ]
       }
     }
