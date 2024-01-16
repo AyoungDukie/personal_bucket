@@ -7,14 +7,21 @@
     "hash": "bf76d696ab7c05a6eebdac0318168fa572bcf305e37c2f2f9dd4192db2d528a1",
     "installer": {
         "script": [
-          "Start-Process \"$dir\\setup.exe\" -ArgumentList '/S' -Wait -Verb RunAs | Out-Null",
-          "Remove-Item \"$dir\\setup.exe\""
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
         ]
     },
+    "post_install": [
+        "$WshShell = New-Object -comObject WScript.Shell",
+        "$Shortcut = $WshShell.CreateShortcut([System.IO.Path]::Combine([Environment]::GetFolderPath('StartMenu'), 'Programs', 'Scoop Apps', 'Vortex.lnk'))",
+        "$Shortcut.TargetPath = \"$dir\\..\\$version\\Vortex.exe\"",
+        "$Shortcut.Save()"
+    ],
+    "uninstaller": {
+        "script": "[System.IO.Path]::Combine([Environment]::GetFolderPath('StartMenu'), 'Programs', 'Scoop Apps', 'Vortex.lnk') | Remove-Item"
+    },
     "checkver": {
-        "url": "https://api.github.com/repos/Nexus-Mods/Vortex/releases",
-        "jsonpath": "$[0].tag_name",
-        "regex": "(?!v)(.+)"
+        "github": "https://github.com/Nexus-Mods/Vortex"
     },
     "autoupdate": {
         "url": "https://github.com/Nexus-Mods/Vortex/releases/download/v$version/vortex-setup-$version.exe#/setup.exe"
