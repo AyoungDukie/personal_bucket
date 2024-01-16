@@ -15,21 +15,17 @@
       }
     }
   },
-  "shortcuts": [
-    [
-      "Vortex.exe",
-      "Vortex"
-    ]
-  ],
   "checkver": {
-    "github": "https://github.com/Nexus-Mods/Vortex"
+      "url": "https://api.github.com/repos/Nexus-Mods/Vortex/releases",
+      "jsonpath": "$[0].tag_name",
+      "regex": "(?!v)(.+)"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://ghproxy.net/https://github.com/Nexus-Mods/Vortex/releases/download/v$version/vortex-setup-$version.exe#/dl.7z",
+        "url": "https://github.com/Nexus-Mods/Vortex/releases/download/v$version/vortex-setup-$version.exe#/dl.7z",
         "hash": {
-          "url": "https://ghproxy.net/https://github.com/Nexus-Mods/Vortex/releases/download/v$version/latest.yml",
+          "url": "https://github.com/Nexus-Mods/Vortex/releases/download/v$version/latest.yml",
           "find": "sha2: $sha256"
         }
       }
