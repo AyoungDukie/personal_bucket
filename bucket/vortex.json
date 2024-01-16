@@ -5,7 +5,8 @@
   "license": "GPL-3.0-or-later",
   "architecture": {
     "64bit": {
-      "url": "https://ghproxy.net/https://github.com/Nexus-Mods/Vortex/releases/download/v1.9.12/vortex-setup-1.9.12.exe#/setup.exe",
+      "url": "https://github.com/Nexus-Mods/Vortex/releases/download/v1.9.12/vortex-setup-1.9.12.exe#/setup.exe",
+      "hash": "bf76d696ab7c05a6eebdac0318168fa572bcf305e37c2f2f9dd4192db2d528a1",
       "installer": {
         "script": [
           "Start-Process \"$dir\\setup.exe\" -ArgumentList '/S' -Wait -Verb RunAs | Out-Null",
