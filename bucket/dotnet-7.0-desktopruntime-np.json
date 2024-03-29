@@ -1,9 +1,15 @@
 {
-  "version": "7.0.17",
-  "##": "https://github.com/dotnet/core/blob/main/release-notes/7.0/7.0.17/7.0.17.md?WT.mc_id=dotnet-35129-website",
+  "version": "7.0.0",
+  "##": "https://github.com/dotnet/core/blob/main/release-notes/7.0/7.0.0/7.0.0.md",
   "homepage": "https://dotnet.microsoft.com/download/dotnet-core",
-  "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.17/windowsdesktop-runtime-7.0.17-win-x64.exe",
-  "bin": "dotnet.exe",
+"architecture": {
+    "32bit": {
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.0/windowsdesktop-runtime-7.0.0-win-x86.exe"
+    },
+    "64bit": {
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.0/windowsdesktop-runtime-7.0.0-win-x64.exe"
+    }
+  },  "bin": "dotnet.exe",
   "installer": {
     "script": [
       "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\extracted\" -Removal",
@@ -21,9 +27,5 @@
     "identifier": "Freeware",
     "url": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
   },
-  "notes": "This package only contains the .NET 7 desktop runtime, install 'dotnet-sdk' instead if you need .NET Core SDK",
-  "checkver": {
-    "jsonpath": "$.releases[0].windowsdesktop.version",
-    "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/7.0/releases.json"
-  }
+  "notes": "This package only contains the .NET 7.0.0 desktop runtime, install 'dotnet-sdk' instead if you need .NET Core SDK",
 }
