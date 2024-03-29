@@ -1,0 +1,23 @@
+{
+  "version": "7.0.17",
+  "description": "Microsoft .NET 7.0 Desktop Runtime.",
+  "##": "https://github.com/dotnet/core/blob/main/release-notes/7.0/7.0.17/7.0.17.md",
+  "homepage": "https://dotnet.microsoft.com/download/dotnet-core",
+  "architecture": {
+    "32bit": {
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.0/windowsdesktop-runtime-7.0.17-win-x86.exe"
+    },
+    "64bit": {
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.0/windowsdesktop-runtime-7.0.17-win-x64.exe"
+    }
+  },  
+  "pre_install": "if (!(is_admin)) { throw 'Admin privileges are required.' }",
+  "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\$fname\" -ArgumentList '/install', '/quiet', '/norestart' -RunAs | Out-Null"
+  },
+  "license": {
+    "identifier": "Freeware",
+    "url": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
+  },
+  "notes": "This package only contains the .NET 7.0.0 desktop runtime, install 'dotnet-sdk' instead if you need .NET Core SDK"
+}
