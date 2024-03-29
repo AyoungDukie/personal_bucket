@@ -5,10 +5,10 @@
   "homepage": "https://dotnet.microsoft.com/download/dotnet-core",
   "architecture": {
     "32bit": {
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.0/windowsdesktop-runtime-7.0.17-win-x86.exe"
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.17/windowsdesktop-runtime-7.0.17-win-x86.exe"
     },
     "64bit": {
-      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.0/windowsdesktop-runtime-7.0.17-win-x64.exe"
+      "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/7.0.17/windowsdesktop-runtime-7.0.17-win-x64.exe"
     }
   },  
   "pre_install": "if (!(is_admin)) { throw 'Admin privileges are required.' }",
