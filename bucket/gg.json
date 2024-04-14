@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://ghproxy.com/https://github.com/gulbanana/gg/releases/download/v0.16.0/gg_0.16.0_x64_en-US.msi#7z",
+      "url": "https://ghproxy.com/https://github.com/gulbanana/gg/releases/download/v0.16.0/gg_0.16.0_x64_en-US.msi#/dl.7z",
       "hash": "4682c3a6a2705c843b4ad09748b5543dcf15b19a9eca1597c2ab31105db448c2"
     }
   },
@@ -14,7 +14,7 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://ghproxy.com/https://github.com/gulbanana/gg/releases/download/v$version/gg_$version_x64_en-US.msi#7z"
+        "url": "https://ghproxy.com/https://github.com/gulbanana/gg/releases/download/v$version/gg_$version_x64_en-US.msi#/dl.7z"
       }
     }
   }
