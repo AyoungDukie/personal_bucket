@@ -9,6 +9,7 @@
       "hash": "4682c3a6a2705c843b4ad09748b5543dcf15b19a9eca1597c2ab31105db448c2"
     }
   },
+  "extract_dir": "PFiles//gg",
   "bin": "gg.exe",
   "checkver": "github",
   "autoupdate": {
