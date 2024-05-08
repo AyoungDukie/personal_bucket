@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://ghproxy.com/https://github.com/gulbanana/gg/releases/download/v0.17.1/gg_0.17.0_x64_en-US.msi",
+      "url": "https://ghproxy.com/https://github.com/gulbanana/gg/releases/download/v0.17.1/gg_0.17.1_x64_en-US.msi",
     }
   },
   "extract_dir": "PFiles//gg",
