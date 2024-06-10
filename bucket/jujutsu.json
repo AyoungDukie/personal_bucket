@@ -1,5 +1,5 @@
 {
-  "version": "0.18.1",
+  "version": "0.18.0",
   "description": "Jujutsu, aka jj, is a Git-compatible DVCS that is both simple and powerful.",
   "homepage": "https://github.com/martinvonz/jj",
   "license": "Apache-2.0",
