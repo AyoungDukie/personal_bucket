@@ -12,7 +12,7 @@
     "pre_install": [
         "Expand-7zipArchive \"$dir\\dl.exe\" | Out-Null",
         "Expand-7zipArchive \"$dir\\ProtonPass-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal | Out-Null",
-        "Remove-Item \"$dir\\dl.exe\", \"$dir\\ProtonPass-*-full.nupkg\", \"$dir\\background.gif\", \"$dir\\RELEASES\", \"$dir\\setupIcon.ico\" -Force -Recurse"
+        "Remove-Item \"$dir\\dl.exe\", \"$dir\\ProtonPass-*-full.nupkg\", \"$dir\\background.gif\", \"$dir\\RELEASES\", \"$dir\\setupIcon.ico\", \"$dir\\Update.exe\" -Force -Recurse"
     ],
     "pre_uninstall": "Stop-Process -Name 'protonpass' -ErrorAction SilentlyContinue",
     "shortcuts": [
