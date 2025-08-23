@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/GameTechDev/PresentMon/releases/download/v2.3.1/PresentMon-2.3.1.msi#7z",
+            "url": "https://github.com/GameTechDev/PresentMon/releases/download/v2.3.1/PresentMon-2.3.1.msi",
         }
     },
     "bin": "PresentMon.exe",
@@ -17,7 +17,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version.msi#7z"
+                "url": "https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version.msi"
             }
         }
     }
