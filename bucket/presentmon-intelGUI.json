@@ -11,6 +11,12 @@
     },
     "extract_dir": "Intel\\PresentMon",
     "bin": "PresentMonApplication\\PresentMon.exe",
+    "shortcut": [
+        [
+            "PresentMon.exe",
+            "PresentMon"
+        ]
+    ],
     "checkver": {
         "url": "https://api.github.com/repos/GameTechDev/PresentMon/releases/latest",
         "jsonpath": "$.tag_name",
