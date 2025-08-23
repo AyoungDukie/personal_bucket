@@ -9,7 +9,7 @@
             "hash": "763b341f6d591a31c8fd870011fb4f798f4ada0d5bd9f4b8286dc364eea78090"
         }
     },
-    "extractDir": "Intel".
+    "extractDir": "Intel",
     "bin": "PresentMonApplication\\PresentMon.exe",
     "checkver": {
         "url": "https://api.github.com/repos/GameTechDev/PresentMon/releases/latest",
