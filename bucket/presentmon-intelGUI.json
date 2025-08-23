@@ -1,0 +1,24 @@
+{
+    "version": "2.3.1",
+    "description": "Tool for collection and processing of ETW events related to frame presentation on Windows.",
+    "homepage": "https://github.com/GameTechDev/PresentMon",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/GameTechDev/PresentMon/releases/download/v2.3.1/PresentMon-2.3.1.msi#7z",
+        }
+    },
+    "bin": "PresentMon.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/GameTechDev/PresentMon/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/GameTechDev/PresentMon/releases/download/v$version/PresentMon-$version.msi#7z"
+            }
+        }
+    }
+}
