@@ -13,7 +13,7 @@
     "bin": "PresentMonApplication\\PresentMon.exe",
     "shortcuts": [
         [
-            "PresentMon.exe",
+            "PresentMonApplication\\PresentMon.exe",
             "PresentMon"
         ]
     ],
