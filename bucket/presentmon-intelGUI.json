@@ -6,6 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/GameTechDev/PresentMon/releases/download/v2.3.1/PresentMon-v2.3.1.msi",
+            "hash": "763b341f6d591a31c8fd870011fb4f798f4ada0d5bd9f4b8286dc364eea78090"
         }
     },
     "bin": "PresentMon.exe",
