@@ -18,10 +18,7 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/kun-codes/Koncentro/releases/download/v$version/Koncentro-$version-Installer.exe"
-            }
+            "url": "https://github.com/kun-codes/Koncentro/releases/download/v$version/Koncentro-$version-Installer.exe"
         }
     }
 }
