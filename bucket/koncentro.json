@@ -4,12 +4,6 @@
     "homepage": "https://github.com/kun-codes/Koncentro",
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/kun-codes/Koncentro/releases/download/v1.1.0/Koncentro-1.1.0-Installer.exe",
-    "bin": [
-        [
-            "koncentro.exe",
-            "Koncentro"
-        ]
-    ],
     "shortcuts": [
         [
             "koncentro.exe",
