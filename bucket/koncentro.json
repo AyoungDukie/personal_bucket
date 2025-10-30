@@ -15,7 +15,7 @@
             "koncentro.exe",
             "Koncenrto"
         ]
-    ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
