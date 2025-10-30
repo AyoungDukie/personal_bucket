@@ -3,18 +3,24 @@
     "description": "A powerful productivity app combining Pomodoro technique, task management, and website blocking.",
     "homepage": "https://github.com/kun-codes/Koncentro",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/kun-codes/Koncentro/releases/download/v1.1.0/Koncentro-1.1.0-Installer.exe#/dl.7z",
-    "shortcuts": [
+    "url": "https://github.com/kun-codes/Koncentro/releases/download/v1.1.0/Koncentro-1.1.0-Installer.exe",
+    "bin": [
         [
             "koncentro.exe",
             "Koncentro"
         ]
     ],
+    "shortcuts": [
+        [
+            "koncentro.exe",
+            "Koncenrto"
+        ]
+    ]
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/kun-codes/Koncentro/releases/download/v$version/Koncentro-$version-Installer.exe#/dl.7z"
+                "url": "https://github.com/kun-codes/Koncentro/releases/download/v$version/Koncentro-$version-Installer.exe"
             }
         }
     }
