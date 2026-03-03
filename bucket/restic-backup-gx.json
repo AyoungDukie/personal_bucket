@@ -5,7 +5,7 @@
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/stormking/resticguigx/-/jobs/7768701098/artifacts/raw/release/0.17.0/restic-backup-gx_0.17.0.exe#/dl.7z",
+            "url": "https://gitlab.com/stormking/resticguigx/-/jobs/9775881150/artifacts/raw/release/0.17.0/restic-backup-gx_0.17.0.exe#/dl.7z",
         }
     },
     "installer": {
@@ -23,7 +23,7 @@
     "post_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
         "$Shortcut = $WshShell.CreateShortcut([System.IO.Path]::Combine([Environment]::GetFolderPath('StartMenu'), 'Programs', 'Scoop Apps', 'Restic Backup GX.lnk'))",
-        "$Shortcut.TargetPath = \"$dir\\..\\$version\\Vortex.exe\"",
+        "$Shortcut.TargetPath = \"$dir\\..\\$version\\restic-backup-gx.exe\"",
         "$Shortcut.Save()"
     ],
     "uninstaller": {
