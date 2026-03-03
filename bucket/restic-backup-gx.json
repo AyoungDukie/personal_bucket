@@ -1,11 +1,11 @@
 {
-    "version": "0.17.0",
+    "version": "0.17.2",
     "description": "ResticGuiGX is a desktop application for your personal backups, powered by restic.",
     "homepage": "https://gitlab.com/stormking/resticguigx",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/stormking/resticguigx/-/jobs/9775881150/artifacts/raw/release/0.17.0/restic-backup-gx_0.17.0.exe#/dl.7z",
+            "url": "https://gitlab.com/stormking/resticguigx/-/jobs/11249636721/artifacts/raw/release/0.17.2/restic-backup-gx_0.17.2.exe#/dl.7z",
         }
     },
     "installer": {
