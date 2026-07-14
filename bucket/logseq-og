@@ -11,8 +11,8 @@
     },
     "shortcuts": [
         [
-            "Logseq.exe",
-            "Logseq"
+            "Logseq-OG.exe",
+            "Logseq-OG"
         ]
     ],
     "checkver": {
